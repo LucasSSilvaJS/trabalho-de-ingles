@@ -1,0 +1,122 @@
+[
+  {
+    "category": "Present Simple",
+    "question": "She ___ to school every day.",
+    "options": ["go", "goes", "is going", "going", "will go"],
+    "answerIndex": 1
+  },
+  {
+    "category": "Present Simple",
+    "question": "They ___ football on Sundays.",
+    "options": ["play", "plays", "playing", "is playing", "will play"],
+    "answerIndex": 0
+  },
+  {
+    "category": "Present Simple",
+    "question": "My brother ___ like pizza.",
+    "options": ["don’t", "isn’t", "doesn’t", "not", "didn’t"],
+    "answerIndex": 2
+  },
+  {
+    "category": "Present Continuous",
+    "question": "Right now, he ___ TV.",
+    "options": ["watch", "is watching", "watches", "watched", "will watch"],
+    "answerIndex": 1
+  },
+  {
+    "category": "Present Continuous",
+    "question": "They ___ to music at the moment.",
+    "options": ["listen", "listens", "listening", "are listening", "will listen"],
+    "answerIndex": 3
+  },
+  {
+    "category": "Present Continuous",
+    "question": "She ___ her homework now.",
+    "options": ["does", "do", "is doing", "doing", "will do"],
+    "answerIndex": 2
+  },
+  {
+    "category": "Future (Will)",
+    "question": "I think it ___ tomorrow.",
+    "options": ["rains", "raining", "rained", "will rain", "rain"],
+    "answerIndex": 3
+  },
+  {
+    "category": "Future (Will)",
+    "question": "She ___ help you with the project.",
+    "options": ["is", "does", "will", "has", "can"],
+    "answerIndex": 2
+  },
+  {
+    "category": "Future (Will)",
+    "question": "They ___ arrive late tonight.",
+    "options": ["will", "are", "does", "has", "is"],
+    "answerIndex": 0
+  },
+  {
+    "category": "WH Questions",
+    "question": "___ is your favorite color?",
+    "options": ["When", "Where", "Who", "What", "Why"],
+    "answerIndex": 3
+  },
+  {
+    "category": "WH Questions",
+    "question": "___ are you from?",
+    "options": ["Who", "Where", "When", "Why", "What"],
+    "answerIndex": 1
+  },
+  {
+    "category": "WH Questions",
+    "question": "___ do you study English?",
+    "options": ["Why", "Where", "Who", "What", "When"],
+    "answerIndex": 0
+  },
+  {
+    "category": "Question Formation",
+    "question": "___ she like chocolate?",
+    "options": ["Do", "Does", "Is", "Did", "Has"],
+    "answerIndex": 1
+  },
+  {
+    "category": "Question Formation",
+    "question": "___ they playing football now?",
+    "options": ["Are", "Do", "Does", "Is", "Have"],
+    "answerIndex": 0
+  },
+  {
+    "category": "Question Formation",
+    "question": "___ you go to school yesterday?",
+    "options": ["Do", "Did", "Does", "Are", "Was"],
+    "answerIndex": 1
+  },
+  {
+    "category": "JavaScript Vocabulary",
+    "question": "In JavaScript, which keyword declares a variable?",
+    "options": ["let", "var", "const", "All of them", "declare"],
+    "answerIndex": 3
+  },
+  {
+    "category": "JavaScript Vocabulary",
+    "question": "What symbol is used for strict equality in JavaScript?",
+    "options": ["=", "==", "===", ":=", "!=="],
+    "answerIndex": 2
+  },
+  {
+    "category": "JavaScript Vocabulary",
+    "question": "Which of these is a JavaScript data type?",
+    "options": ["String", "Number", "Boolean", "Undefined", "All of the above"],
+    "answerIndex": 4
+  },
+  {
+    "category": "JavaScript Vocabulary",
+    "question": "What function shows a message in the browser console?",
+    "options": ["log()", "print()", "console.log()", "alert()", "show()"],
+    "answerIndex": 2
+  },
+  {
+    "category": "JavaScript Vocabulary",
+    "question": "Which symbol is used for comments in JavaScript?",
+    "options": ["//", "**", "", "##", "%%"],
+    "answerIndex": 0
+  }
+]
