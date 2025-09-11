@@ -8,3 +8,5 @@ As perguntas são carregadas dinamicamente de um arquivo JSON, o que torna o qui
 - ANA BEATRIZ GOMES DA SILVA
 - AMANDA PRISCILA ALVES DOS SANTOS
 - LUCAS DE SOUZA SILVA
+
+[LINK DA APLICAÇÃO](https://trabalho-de-ingles.vercel.app/)
