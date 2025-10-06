@@ -1,122 +1,642 @@
 [
-  {
-    "category": "Present Simple",
-    "question": "She ___ to school every day.",
-    "options": ["go", "goes", "is going", "going", "will go"],
-    "answerIndex": 1
-  },
-  {
-    "category": "Present Simple",
-    "question": "They ___ football on Sundays.",
-    "options": ["play", "plays", "playing", "is playing", "will play"],
-    "answerIndex": 0
-  },
-  {
-    "category": "Present Simple",
-    "question": "My brother ___ like pizza.",
-    "options": ["don’t", "isn’t", "doesn’t", "not", "didn’t"],
-    "answerIndex": 2
-  },
-  {
-    "category": "Present Continuous",
-    "question": "Right now, he ___ TV.",
-    "options": ["watch", "is watching", "watches", "watched", "will watch"],
-    "answerIndex": 1
-  },
-  {
-    "category": "Present Continuous",
-    "question": "They ___ to music at the moment.",
-    "options": ["listen", "listens", "listening", "are listening", "will listen"],
-    "answerIndex": 3
-  },
-  {
-    "category": "Present Continuous",
-    "question": "She ___ her homework now.",
-    "options": ["does", "do", "is doing", "doing", "will do"],
-    "answerIndex": 2
-  },
-  {
-    "category": "Future (Will)",
-    "question": "I think it ___ tomorrow.",
-    "options": ["rains", "raining", "rained", "will rain", "rain"],
-    "answerIndex": 3
-  },
-  {
-    "category": "Future (Will)",
-    "question": "She ___ help you with the project.",
-    "options": ["is", "does", "will", "has", "can"],
-    "answerIndex": 2
-  },
-  {
-    "category": "Future (Will)",
-    "question": "They ___ arrive late tonight.",
-    "options": ["will", "are", "does", "has", "is"],
-    "answerIndex": 0
-  },
-  {
-    "category": "WH Questions",
-    "question": "___ is your favorite color?",
-    "options": ["When", "Where", "Who", "What", "Why"],
-    "answerIndex": 3
-  },
-  {
-    "category": "WH Questions",
-    "question": "___ are you from?",
-    "options": ["Who", "Where", "When", "Why", "What"],
-    "answerIndex": 1
-  },
-  {
-    "category": "WH Questions",
-    "question": "___ do you study English?",
-    "options": ["Why", "Where", "Who", "What", "When"],
-    "answerIndex": 0
-  },
-  {
-    "category": "Question Formation",
-    "question": "___ she like chocolate?",
-    "options": ["Do", "Does", "Is", "Did", "Has"],
-    "answerIndex": 1
-  },
-  {
-    "category": "Question Formation",
-    "question": "___ they playing football now?",
-    "options": ["Are", "Do", "Does", "Is", "Have"],
-    "answerIndex": 0
-  },
-  {
-    "category": "Question Formation",
-    "question": "___ you go to school yesterday?",
-    "options": ["Do", "Did", "Does", "Are", "Was"],
-    "answerIndex": 1
-  },
-  {
-    "category": "JavaScript Vocabulary",
-    "question": "In JavaScript, which keyword declares a variable?",
-    "options": ["let", "var", "const", "All of them", "declare"],
-    "answerIndex": 3
-  },
-  {
-    "category": "JavaScript Vocabulary",
-    "question": "What symbol is used for strict equality in JavaScript?",
-    "options": ["=", "==", "===", ":=", "!=="],
-    "answerIndex": 2
-  },
-  {
-    "category": "JavaScript Vocabulary",
-    "question": "Which of these is a JavaScript data type?",
-    "options": ["String", "Number", "Boolean", "Undefined", "All of the above"],
-    "answerIndex": 4
-  },
-  {
-    "category": "JavaScript Vocabulary",
-    "question": "What function shows a message in the browser console?",
-    "options": ["log()", "print()", "console.log()", "alert()", "show()"],
-    "answerIndex": 2
-  },
-  {
-    "category": "JavaScript Vocabulary",
-    "question": "Which symbol is used for comments in JavaScript?",
-    "options": ["//", "**", "", "##", "%%"],
-    "answerIndex": 0
-  }
+    {
+        "category": "Present Simple",
+        "question": "She ___ to school every day.",
+        "options": [
+            {
+                "letter": "A",
+                "text": "go",
+                "explanation": "Errado, porque com he/she/it, o verbo precisa de -s."
+            },
+            {
+                "letter": "B",
+                "text": "goes",
+                "explanation": "Correto, forma adequada para she no present simple."
+            },
+            {
+                "letter": "C",
+                "text": "is going",
+                "explanation": "Errado, present continuous indica ação acontecendo agora."
+            },
+            {
+                "letter": "D",
+                "text": "going",
+                "explanation": "Errado, incompleto; falta verbo auxiliar."
+            },
+            {
+                "letter": "E",
+                "text": "will go",
+                "explanation": "Errado, tempo futuro, não presente."
+            }
+        ],
+        "correctAnswer": "B"
+    },
+    {
+        "category": "Present Simple",
+        "question": "They ___ football on Sundays.",
+        "options": [
+            {
+                "letter": "A",
+                "text": "play",
+                "explanation": "Correto, present simple para they."
+            },
+            {
+                "letter": "B",
+                "text": "plays",
+                "explanation": "Errado, plays é para he/she/it."
+            },
+            {
+                "letter": "C",
+                "text": "playing",
+                "explanation": "Errado, falta verbo auxiliar para o continuous."
+            },
+            {
+                "letter": "D",
+                "text": "is playing",
+                "explanation": "Errado, present continuous não é para rotinas."
+            },
+            {
+                "letter": "E",
+                "text": "will play",
+                "explanation": "Errado, tempo futuro, não presente."
+            }
+        ],
+        "correctAnswer": "A"
+    },
+    {
+        "category": "Present Simple",
+        "question": "My brother ___ like pizza.",
+        "options": [
+            {
+                "letter": "A",
+                "text": "don't",
+                "explanation": "Errado, don't é para I/you/we/they."
+            },
+            {
+                "letter": "B",
+                "text": "isn't",
+                "explanation": "Errado, negativo do verbo to be, não correto aqui."
+            },
+            {
+                "letter": "C",
+                "text": "doesn't",
+                "explanation": "Correto, forma negativa para he/she/it no present simple."
+            },
+            {
+                "letter": "D",
+                "text": "not",
+                "explanation": "Errado, não pode ser usado sozinho."
+            },
+            {
+                "letter": "E",
+                "text": "didn't",
+                "explanation": "Errado, tempo passado, não presente."
+            }
+        ],
+        "correctAnswer": "C"
+    },
+    {
+        "category": "Present Continuous",
+        "question": "Right now, he ___ TV.",
+        "options": [
+            {
+                "letter": "A",
+                "text": "watch",
+                "explanation": "Errado, present simple não combina com right now."
+            },
+            {
+                "letter": "B",
+                "text": "is watching",
+                "explanation": "Correto, present continuous para ação acontecendo agora."
+            },
+            {
+                "letter": "C",
+                "text": "watches",
+                "explanation": "Errado, present simple indica rotina, não ação atual."
+            },
+            {
+                "letter": "D",
+                "text": "watched",
+                "explanation": "Errado, tempo passado."
+            },
+            {
+                "letter": "E",
+                "text": "will watch",
+                "explanation": "Errado, tempo futuro."
+            }
+        ],
+        "correctAnswer": "B"
+    },
+    {
+        "category": "Present Continuous",
+        "question": "They ___ to music at the moment.",
+        "options": [
+            {
+                "letter": "A",
+                "text": "listen",
+                "explanation": "Errado, present simple; at the moment requer continuous."
+            },
+            {
+                "letter": "B",
+                "text": "listens",
+                "explanation": "Errado, singular apenas (he/she/it)."
+            },
+            {
+                "letter": "C",
+                "text": "listening",
+                "explanation": "Errado, falta verbo auxiliar."
+            },
+            {
+                "letter": "D",
+                "text": "are listening",
+                "explanation": "Correto, present continuous para agora."
+            },
+            {
+                "letter": "E",
+                "text": "will listen",
+                "explanation": "Errado, tempo futuro."
+            }
+        ],
+        "correctAnswer": "D"
+    },
+    {
+        "category": "Present Continuous",
+        "question": "She ___ her homework now.",
+        "options": [
+            {
+                "letter": "A",
+                "text": "does",
+                "explanation": "Errado, present simple; now requer continuous."
+            },
+            {
+                "letter": "B",
+                "text": "do",
+                "explanation": "Errado, forma incorreta para she."
+            },
+            {
+                "letter": "C",
+                "text": "is doing",
+                "explanation": "Correto, present continuous."
+            },
+            {
+                "letter": "D",
+                "text": "doing",
+                "explanation": "Errado, falta verbo auxiliar."
+            },
+            {
+                "letter": "E",
+                "text": "will do",
+                "explanation": "Errado, tempo futuro."
+            }
+        ],
+        "correctAnswer": "C"
+    },
+    {
+        "category": "Future (Will)",
+        "question": "I think it ___ tomorrow.",
+        "options": [
+            {
+                "letter": "A",
+                "text": "rains",
+                "explanation": "Errado, present simple; predição futura precisa de will."
+            },
+            {
+                "letter": "B",
+                "text": "raining",
+                "explanation": "Errado, incompleto; falta auxiliar."
+            },
+            {
+                "letter": "C",
+                "text": "rained",
+                "explanation": "Errado, tempo passado."
+            },
+            {
+                "letter": "D",
+                "text": "will rain",
+                "explanation": "Correto, tempo futuro para predição."
+            },
+            {
+                "letter": "E",
+                "text": "rain",
+                "explanation": "Errado, incompleto; precisa de auxiliar."
+            }
+        ],
+        "correctAnswer": "D"
+    },
+    {
+        "category": "Future (Will)",
+        "question": "She ___ help you with the project.",
+        "options": [
+            {
+                "letter": "A",
+                "text": "is",
+                "explanation": "Errado, verbo to be não se encaixa."
+            },
+            {
+                "letter": "B",
+                "text": "does",
+                "explanation": "Errado, tempo presente, não futuro."
+            },
+            {
+                "letter": "C",
+                "text": "will",
+                "explanation": "Correto, tempo futuro."
+            },
+            {
+                "letter": "D",
+                "text": "has",
+                "explanation": "Errado, tempo incorreto."
+            },
+            {
+                "letter": "E",
+                "text": "can",
+                "explanation": "Errado, possibilidade, não futuro."
+            }
+        ],
+        "correctAnswer": "C"
+    },
+    {
+        "category": "Future (Will)",
+        "question": "They ___ arrive late tonight.",
+        "options": [
+            {
+                "letter": "A",
+                "text": "will",
+                "explanation": "Correto, tempo futuro."
+            },
+            {
+                "letter": "B",
+                "text": "are",
+                "explanation": "Errado, tempo presente."
+            },
+            {
+                "letter": "C",
+                "text": "does",
+                "explanation": "Errado, apenas singular."
+            },
+            {
+                "letter": "D",
+                "text": "has",
+                "explanation": "Errado, tempo incorreto."
+            },
+            {
+                "letter": "E",
+                "text": "is",
+                "explanation": "Errado, apenas singular."
+            }
+        ],
+        "correctAnswer": "A"
+    },
+    {
+        "category": "WH Questions",
+        "question": "___ is your favorite color?",
+        "options": [
+            {
+                "letter": "A",
+                "text": "When",
+                "explanation": "Errado, pergunta sobre tempo, não cor."
+            },
+            {
+                "letter": "B",
+                "text": "Where",
+                "explanation": "Errado, pergunta sobre lugar."
+            },
+            {
+                "letter": "C",
+                "text": "Who",
+                "explanation": "Errado, pergunta sobre pessoa."
+            },
+            {
+                "letter": "D",
+                "text": "What",
+                "explanation": "Correto, pergunta sobre coisa/resposta (cor)."
+            },
+            {
+                "letter": "E",
+                "text": "Why",
+                "explanation": "Errado, pergunta sobre razão."
+            }
+        ],
+        "correctAnswer": "D"
+    },
+    {
+        "category": "WH Questions",
+        "question": "___ are you from?",
+        "options": [
+            {
+                "letter": "A",
+                "text": "Who",
+                "explanation": "Errado, pergunta sobre pessoa."
+            },
+            {
+                "letter": "B",
+                "text": "Where",
+                "explanation": "Correto, pergunta sobre lugar/origem."
+            },
+            {
+                "letter": "C",
+                "text": "When",
+                "explanation": "Errado, pergunta sobre tempo."
+            },
+            {
+                "letter": "D",
+                "text": "Why",
+                "explanation": "Errado, pergunta sobre razão."
+            },
+            {
+                "letter": "E",
+                "text": "What",
+                "explanation": "Errado, pergunta sobre coisa."
+            }
+        ],
+        "correctAnswer": "B"
+    },
+    {
+        "category": "WH Questions",
+        "question": "___ do you study English?",
+        "options": [
+            {
+                "letter": "A",
+                "text": "Why",
+                "explanation": "Correto, pergunta sobre razão/motivação."
+            },
+            {
+                "letter": "B",
+                "text": "Where",
+                "explanation": "Errado, pergunta sobre lugar."
+            },
+            {
+                "letter": "C",
+                "text": "Who",
+                "explanation": "Errado, pergunta sobre pessoa."
+            },
+            {
+                "letter": "D",
+                "text": "What",
+                "explanation": "Errado, pergunta sobre coisa."
+            },
+            {
+                "letter": "E",
+                "text": "When",
+                "explanation": "Errado, pergunta sobre tempo."
+            }
+        ],
+        "correctAnswer": "A"
+    },
+    {
+        "category": "Question Formation",
+        "question": "___ she like chocolate?",
+        "options": [
+            {
+                "letter": "A",
+                "text": "Do",
+                "explanation": "Errado, do não combina com terceira pessoa do singular."
+            },
+            {
+                "letter": "B",
+                "text": "Does",
+                "explanation": "Correto, auxiliar adequado para he/she/it."
+            },
+            {
+                "letter": "C",
+                "text": "Is",
+                "explanation": "Errado, verbo to be não é usado aqui."
+            },
+            {
+                "letter": "D",
+                "text": "Did",
+                "explanation": "Errado, tempo passado."
+            },
+            {
+                "letter": "E",
+                "text": "Has",
+                "explanation": "Errado, não aplicável."
+            }
+        ],
+        "correctAnswer": "B"
+    },
+    {
+        "category": "Question Formation",
+        "question": "___ they playing football now?",
+        "options": [
+            {
+                "letter": "A",
+                "text": "Are",
+                "explanation": "Correto, formando pergunta no present continuous."
+            },
+            {
+                "letter": "B",
+                "text": "Do",
+                "explanation": "Errado, present simple, não continuous."
+            },
+            {
+                "letter": "C",
+                "text": "Does",
+                "explanation": "Errado, apenas singular."
+            },
+            {
+                "letter": "D",
+                "text": "Is",
+                "explanation": "Errado, apenas singular."
+            },
+            {
+                "letter": "E",
+                "text": "Have",
+                "explanation": "Errado, não aplicável."
+            }
+        ],
+        "correctAnswer": "A"
+    },
+    {
+        "category": "Question Formation",
+        "question": "___ you go to school yesterday?",
+        "options": [
+            {
+                "letter": "A",
+                "text": "Do",
+                "explanation": "Errado, present simple; a pergunta é sobre o passado."
+            },
+            {
+                "letter": "B",
+                "text": "Did",
+                "explanation": "Correto, pergunta no past simple."
+            },
+            {
+                "letter": "C",
+                "text": "Does",
+                "explanation": "Errado, presente singular."
+            },
+            {
+                "letter": "D",
+                "text": "Are",
+                "explanation": "Errado, present continuous."
+            },
+            {
+                "letter": "E",
+                "text": "Was",
+                "explanation": "Errado, passado afirmativo, não interrogativo."
+            }
+        ],
+        "correctAnswer": "B"
+    },
+    {
+        "category": "JavaScript Vocabulary",
+        "question": "In JavaScript, which keyword declares a variable?",
+        "options": [
+            {
+                "letter": "A",
+                "text": "let",
+                "explanation": "Parcialmente correto, mas não é a resposta completa. let declara variáveis, mas var e const também."
+            },
+            {
+                "letter": "B",
+                "text": "var",
+                "explanation": "Parcialmente correto, mas não é a resposta completa. var declara variáveis, mas let e const também."
+            },
+            {
+                "letter": "C",
+                "text": "const",
+                "explanation": "Parcialmente correto, mas não é a resposta completa. const declara constantes, mas let e var também declaram variáveis."
+            },
+            {
+                "letter": "D",
+                "text": "All of them",
+                "explanation": "Correto! Todas as três palavras-chave (let, var, const) podem ser usadas para declarar variáveis em JavaScript."
+            },
+            {
+                "letter": "E",
+                "text": "declare",
+                "explanation": "Errado, declare não é uma palavra-chave do JavaScript para declaração de variáveis."
+            }
+        ],
+        "correctAnswer": "D"
+    },
+    {
+        "category": "JavaScript Vocabulary",
+        "question": "What symbol is used for strict equality in JavaScript?",
+        "options": [
+            {
+                "letter": "A",
+                "text": "=",
+                "explanation": "Errado, operador de atribuição."
+            },
+            {
+                "letter": "B",
+                "text": "==",
+                "explanation": "Errado, igualdade mas não estrita."
+            },
+            {
+                "letter": "C",
+                "text": "===",
+                "explanation": "Correto, operador de igualdade estrita."
+            },
+            {
+                "letter": "D",
+                "text": ":=",
+                "explanation": "Errado, não usado em JavaScript."
+            },
+            {
+                "letter": "E",
+                "text": "!==",
+                "explanation": "Errado, desigualdade estrita, não igualdade."
+            }
+        ],
+        "correctAnswer": "C"
+    },
+    {
+        "category": "JavaScript Vocabulary",
+        "question": "Which of these is a JavaScript data type?",
+        "options": [
+            {
+                "letter": "A",
+                "text": "String",
+                "explanation": "Correto, tipo de dado válido."
+            },
+            {
+                "letter": "B",
+                "text": "Number",
+                "explanation": "Correto."
+            },
+            {
+                "letter": "C",
+                "text": "Boolean",
+                "explanation": "Correto."
+            },
+            {
+                "letter": "D",
+                "text": "Undefined",
+                "explanation": "Correto."
+            },
+            {
+                "letter": "E",
+                "text": "All of the above",
+                "explanation": "Correto, todos os listados são tipos de dados válidos do JavaScript."
+            }
+        ],
+        "correctAnswer": "E"
+    },
+    {
+        "category": "JavaScript Vocabulary",
+        "question": "What function shows a message in the browser console?",
+        "options": [
+            {
+                "letter": "A",
+                "text": "log()",
+                "explanation": "Errado, falta o objeto console."
+            },
+            {
+                "letter": "B",
+                "text": "print()",
+                "explanation": "Errado, não usado em JavaScript."
+            },
+            {
+                "letter": "C",
+                "text": "console.log()",
+                "explanation": "Correto, exibe mensagens no console."
+            },
+            {
+                "letter": "D",
+                "text": "alert()",
+                "explanation": "Errado, mostra popup, não mensagem no console."
+            },
+            {
+                "letter": "E",
+                "text": "show()",
+                "explanation": "Errado, não é uma função do JavaScript."
+            }
+        ],
+        "correctAnswer": "C"
+    },
+    {
+        "category": "JavaScript Vocabulary",
+        "question": "Which symbol is used for comments in JavaScript?",
+        "options": [
+            {
+                "letter": "A",
+                "text": "//",
+                "explanation": "Correto, comentário de linha única."
+            },
+            {
+                "letter": "B",
+                "text": "/* */",
+                "explanation": "Também correto, comentário de múltiplas linhas."
+            },
+            {
+                "letter": "C",
+                "text": "<!-- -->",
+                "explanation": "Errado, comentário HTML."
+            },
+            {
+                "letter": "D",
+                "text": "##",
+                "explanation": "Errado, não é JavaScript."
+            },
+            {
+                "letter": "E",
+                "text": "%%",
+                "explanation": "Errado, não é JavaScript."
+            }
+        ],
+        "correctAnswer": "A"
+    }
 ]
