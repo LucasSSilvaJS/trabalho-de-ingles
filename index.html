@@ -1,32 +1,114 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quizz de Inglês e JS</title>
+    <title>Quiz de Inglês</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <div id="welcome-screen" class="container">
-        <h1>Bem-vindo ao Quizz!</h1>
-        <p>Por favor, digite seu nome para começar.</p>
-        <input type="text" id="username-input" placeholder="Seu nome">
-        <button id="start-button">Iniciar Quizz</button>
+    <div id="welcomeScreen" class="welcome-screen">
+        <div class="welcome-content">
+            <div class="welcome-icon">📚</div>
+            <h1 class="welcome-title">Quiz de Inglês</h1>
+            <p class="welcome-subtitle">Teste seus conhecimentos em gramática e JavaScript</p>
+            
+            <div class="quiz-features">
+                <div class="feature">
+                    <div class="feature-icon">⏰</div>
+                    <div class="feature-text">20 segundos por questão</div>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">💡</div>
+                    <div class="feature-text">Dicas disponíveis</div>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🔀</div>
+                    <div class="feature-text">Perguntas embaralhadas</div>
+                </div>
+            </div>
+            
+            <div class="name-input-container">
+                <label for="userName">Digite seu nome:</label>
+                <input type="text" id="userName" placeholder="Seu nome aqui..." maxlength="30">
+            </div>
+            
+            <button class="start-btn" onclick="startQuiz()">
+                Começar Quiz
+                <span class="start-arrow">→</span>
+            </button>
+            
+            <div class="welcome-footer">
+                <p>Boa sorte! 🍀</p>
+            </div>
+        </div>
     </div>
 
-    <div id="quiz-screen" class="container hidden">
-        <h2 id="question-text"></h2>
-        <div id="options-container" class="options-grid"></div>
-        <button id="next-button" class="hidden">Próxima Pergunta</button>
+    <div class="quiz-container" id="quizContainer" style="display: none;">
+        <div class="quiz-header">
+            <h1>📚 Quiz de Inglês</h1>
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+        </div>
+        
+        <div id="quizContent" class="quiz-content">
+            <div class="question-stats">
+                <div class="stats-item">
+                    <div class="stats-icon correct-icon">✓</div>
+                    <span id="correctCount">0</span>
+                </div>
+                <div class="stats-item">
+                    <div class="stats-icon incorrect-icon">✗</div>
+                    <span id="incorrectCount">0</span>
+                </div>
+                <div class="stats-item">
+                    <div class="stats-icon hint-used-icon">💡</div>
+                    <span id="hintsUsed">0</span>
+                </div>
+            </div>
+            
+            <div class="category" id="category"></div>
+            
+            <div class="timer-container">
+                <div class="timer-circle" id="timerCircle">
+                    <span id="timeLeft">20</span>
+                </div>
+                <div class="timer-text">segundos restantes</div>
+            </div>
+            
+            <div class="question" id="question"></div>
+            <div class="options" id="options"></div>
+            <div id="feedback" class="feedback" style="display: none;"></div>
+            
+            <div class="controls">
+                <div class="question-counter">
+                    <span id="currentQuestion">1</span> de <span id="totalQuestions">21</span>
+                </div>
+                <button id="nextBtn" class="btn btn-primary" onclick="nextQuestion()" disabled>
+                    Próxima
+                </button>
+            </div>
+        </div>
+        
+        <div id="results" class="results" style="display: none;">
+            <h2>🎉 Quiz Concluído!</h2>
+            <div class="score" id="finalScore">0/21</div>
+            <div class="performance" id="performance"></div>
+            <button class="restart-btn" onclick="restartQuiz()">
+                🔄 Refazer Quiz
+            </button>
+        </div>
     </div>
-
-    <div id="result-screen" class="container hidden">
-        <h1>Resultado do Quizz</h1>
-        <p id="final-message"></p>
-        <p>Pontuação: <span id="score-display"></span></p>
-        <p>Tempo total: <span id="time-display"></span></p>
-        <button id="restart-button">Reiniciar Quizz</button>
+    
+    <!-- Modal de Dica -->
+    <div id="hintModal" class="hint-modal">
+        <div class="hint-content">
+            <div class="hint-icon">💡</div>
+            <div class="hint-title">Precisa de uma dica?</div>
+            <div class="hint-text" id="hintText"></div>
+            <button class="hint-btn" onclick="useHint()">Usar Dica (+10s)</button>
+        </div>
     </div>
 
     <script src="script.js"></script>
